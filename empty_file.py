@@ -4,3 +4,5 @@ print("improving git understanding through reps")
 
 #lowkey starting to understand git, its nothing too complicated🎉🎉
 #apparently its up to date but i can visible see its not😤😤
+
+#vscode is too sick 
