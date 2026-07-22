@@ -1,11 +1,13 @@
 #Absolutely 0 help just me, myself and I
-import pandas as tb
+import pandas as pd
+import matplotlib.pyplot as plt
+#^ for data visualisation ^
 from time import sleep
 
 print("---Loading---")
 
 try:
-    table = tb.read_csv('lung_cancer.csv')
+    table = pd.read_csv('lung_cancer.csv')
     print(f"---Numbers of rows and columns {table.shape}---")
     sleep(3)
 
