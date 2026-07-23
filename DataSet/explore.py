@@ -23,5 +23,12 @@ try:
     
     print(table.head(time))
 
+    drop = ""
+    while drop != "Y" and drop != "N":
+        drop = input("Would you like to drop any rows with missing data? Y/N ").upper()
+
+    if drop == "Y":
+        print(table.dropna())
+    #axis = 0 means rows, axis = 1 means columns
 except FileNotFoundError:
     print("File couldn't be found")
