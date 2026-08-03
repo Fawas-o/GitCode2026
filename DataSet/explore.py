@@ -24,6 +24,8 @@ try:
     while time <= 0:
         try:
             time = int(input("How much rows would you like to get printed: "))
+            if time <= 0:
+                print("You must input a number above 0")
         except ValueError:
             print("You must input a number over 0")
             time = 0
@@ -61,6 +63,7 @@ try:
     #printing amount of men and ladies
     table['age_at_initial_pathologic'].plot(kind = 'hist')
     plt.savefig('Age_histogram.png')
+    plt.show()
     # print("The ") something with mean etc
 except FileNotFoundError:
     print("File couldn't be found")
