@@ -63,11 +63,21 @@ try:
     #printing amount of men and ladies
     table['age_at_initial_pathologic'].plot(kind = 'hist')
     plt.savefig('Age_histogram.png')
-
-    table['race'].value_counts().plot(kind='pie')
-    plt.savefig('race_pie_chart')
-    
     plt.show()
+
+    table['race'].value_counts().plot.pie()
+    plt.savefig('race_pie_chart')
+    plt.show()
+
+    table['histological_type'].value_counts().plot(kind='barh')#.bar()
+    plt.savefig('histological type')
+    plt.show()
+
+    table['tumor_tissue_site'].value_counts().plot.bar()
+    plt.savefig('tumor tissue site')
+    plt.show()
+    
+
 
     # print("The ") something with mean etc
 except FileNotFoundError:
